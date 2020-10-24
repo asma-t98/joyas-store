@@ -1,0 +1,65 @@
+body{
+    background-color: #a26a9f;
+}
+.menu ul{
+    display: inline-flex;
+    margin-left: -40px;
+    margin-top: 35px;
+}
+.menu ul li{
+    list-style: none;
+    margin: 0 20px;
+    color: white;
+    cursor: pointer;
+}
+
+
+#logo{ 
+    margin-top: -13px;
+    border-radius: 20%;
+    width: 70px;
+    box-shadow: 0px 3px 7px 0px #2f1532;
+}
+
+
+
+h1{
+text-align: center;
+margin-top: 30px;
+font-size: 40px;
+font-family: monospace;
+color: #F3E5F5;
+}
+
+.gallery{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    margin:2% auto 0;
+    box-sizing: border-box;
+}
+.image_box{
+    margin: 0 1%;
+    flex-basis: 0;
+    flex-grow: 1;
+    transition: 0.5s;
+
+}
+.image_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.image_box:hover{
+    flex-basis: 50%;
+}
+.active{
+    flex-basis: 50%;
+}
+.gallery:hover .active{
+    flex-basis: 0%;
+}
+.image_box:nth-child(1):hover{
+    flex-basis: 50%;
+}
